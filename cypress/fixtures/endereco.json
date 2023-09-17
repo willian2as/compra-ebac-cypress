@@ -1,0 +1,13 @@
+{
+    "nome": "Arnold",
+    "sobrenome":"Schwarzenegger",
+    "empresa":"Hollywood",
+    "pais":"Brasil",
+    "endereco":"Rua Hasta la Vista",
+    "numero":"666",
+    "cidade":"Babe",
+    "estado":"São Paulo",
+    "cep":"99999999",
+    "telefone":"+55 99 999999999",
+    "email":"teste2@teste.com"
+}
