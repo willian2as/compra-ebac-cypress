@@ -32,7 +32,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.get('.top-cart-wishlist').click()
         cy.get('.checkout').first().click({force: true})
         cy.get('.showlogin').click()
-        cy.login(dadosLogin.usuario, dadosLogin.senha)
+        cy.loginEX(dadosLogin.usuario, dadosLogin.senha)
         
         entregaPage.editarEnderecoEntrega
             (dadosEndereco.nome,

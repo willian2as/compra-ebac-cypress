@@ -25,10 +25,16 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 
-Cypress.Commands.add('login', (usuario, senha) => {
+Cypress.Commands.add('loginEX', (usuario, senha) => {
     cy.get('#username').type(usuario)
     cy.get('#password').type(senha, {log: false})
     cy.get('.woocommerce-button').click()
+});
+
+Cypress.Commands.add('loginLOGIN', (usuario, senha) => {
+    cy.get('#username').type(usuario)
+    cy.get('#password').type(senha, {log: false})
+    cy.get('.woocommerce-form > .button').click()
 });
 
 Cypress.Commands.add('addProdutos', (produto, tamanho, cor, quantidade) => {
